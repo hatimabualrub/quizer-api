@@ -5,9 +5,9 @@ const quizRouter = require("./routers/quizRouter");
 const userRouter = require("./routers/userRouter");
 require("./db/mongoose");
 
-app = express();
+const app = express();
 
-port = process.env.PORT | 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
